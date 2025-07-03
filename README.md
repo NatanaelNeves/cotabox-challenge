@@ -8,7 +8,7 @@ Aqui vai uma imagem da aplicação final ![Capturar](https://github.com/user-att
 
 ---
 🔗 Links da Aplicação Online
-Frontend (Aplicação ao Vivo): [https://seu-projeto.vercel.app](https://cotabox-challenge-taupe.vercel.app)
+Frontend (Aplicação ao Vivo): https://cotabox-challenge-taupe.vercel.app
 
 Backend (API GraphQL Playground): https://cotabox-challenge-backend.onrender.com/graphql
 
