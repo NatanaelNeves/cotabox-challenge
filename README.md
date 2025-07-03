@@ -1,6 +1,6 @@
 # Desafio Técnico Fullstack - Cotabox
 
-Este projeto é uma aplicação Fullstack completa desenvolvida como parte do desafio técnico para a vaga de Desenvolvedor(a) Estágio ou Júnior na Cotabox. A aplicação permite o cadastro de participantes e a visualização de suas participações em uma tabela e um gráfico interativo.
+Este projeto é uma aplicação Fullstack completa desenvolvida como parte do desafio técnico para a vaga de Desenvolvedor Estágio ou Júnior na Cotabox. A aplicação permite o cadastro de participantes e a visualização de suas participações em uma tabela e um gráfico interativo.
 
 ## 📸 Screenshot
 
@@ -59,7 +59,7 @@ Este é o método mais simples. Você só precisa ter o Docker e o Docker Compos
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/cotabox-challenge.git](https://github.com/seu-usuario/cotabox-challenge.git)
+    git clone [https://github.com/NatanaelNeves/cotabox-challenge.git](https://github.com/seu-usuario/cotabox-challenge.git)
     cd cotabox-challenge
     ```
 
@@ -67,7 +67,7 @@ Este é o método mais simples. Você só precisa ter o Docker e o Docker Compos
     - Na pasta `backend`, crie um arquivo chamado `.env`.
     - Adicione sua string de conexão do MongoDB Atlas:
       ```
-      MONGO_URI=mongodb+srv://...
+      MONGO_URI=mongodb+srv://natanaelnevesalves:ICD0nT7SmsGOrQTC@cotabox.hp0c7fi.mongodb.net/?retryWrites=true&w=majority&appName=Cotabox
       ```
 
 3.  **Suba os containers:**
