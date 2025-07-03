@@ -59,7 +59,7 @@ Este é o método mais simples. Você só precisa ter o Docker e o Docker Compos
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/NatanaelNeves/cotabox-challenge.git](https://github.com/seu-usuario/cotabox-challenge.git)
+    git clone [https://github.com/NatanaelNeves/cotabox-challenge.git)
     cd cotabox-challenge
     ```
 
