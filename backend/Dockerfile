@@ -5,7 +5,7 @@
     WORKDIR /app
 
     # Copiamos os arquivos de dependência primeiro para aproveitar o cache do Docker
-    COPY package*.json ./
+    COPY backend/package*.json ./
 
     # Instalamos as dependências
     RUN npm install
