@@ -53,9 +53,8 @@
   </script>
   
   <style>
-  /* Usamos CSS não "scoped" para sobrescrever o Element UI com mais facilidade */
   .el-table .highlighted-row {
-    background-color: #eaf9fc !important; /* Um azul bem claro */
+    background-color: #eaf9fc !important; 
     cursor: pointer;
   }
   

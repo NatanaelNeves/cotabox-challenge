@@ -93,18 +93,17 @@ export default {
 
 .card-subtitle {
   margin-top: 0;
-  margin-bottom: 16px; /* Reduzido para dar espaço para o novo texto */
+  margin-bottom: 16px; 
   color: #6c757d;
   font-size: 1.1rem;
 }
 
-/* Estilos para o novo container de porcentagem */
 .remaining-container {
   margin-bottom: 32px;
 }
 .remaining-text {
   margin: 0;
-  color: #36B37E; /* Verde para indicar "disponível" */
+  color: #36B37E; 
   font-size: 1rem;
 }
 .remaining-value {

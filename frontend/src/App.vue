@@ -113,7 +113,6 @@ export default {
         ],
       };
     },
-    // Propriedade computada para calcular a porcentagem restante
     remainingPercentage() {
       const total = this.participants.reduce((sum, p) => sum + p.participation, 0);
       return 100 - total;
@@ -179,7 +178,6 @@ export default {
 </script>
 
 <style>
-/* A seção <style> continua exatamente a mesma de antes */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;

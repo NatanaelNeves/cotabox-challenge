@@ -38,9 +38,8 @@ const resolvers = {
           invalidArgs: Object.keys(err.errors),
         });
       }
-    }, // A função addParticipant termina aqui
+    }, 
 
-    // A função resetData começa aqui, como uma função separada
     resetData: async () => {
       try {
         await Participant.deleteMany({});

@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
-const cors = require('cors'); // 1. Importa o pacote cors
+const cors = require('cors'); 
 const typeDefs = require('./graphql/typeDefs');
 const resolvers = require('./graphql/resolvers');
 const connectDB = require('./config/database');
