@@ -4,9 +4,13 @@ Este projeto é uma aplicação Fullstack completa desenvolvida como parte do de
 
 ## 📸 Screenshot
 
-![Aqui vai uma imagem da aplicação final] ![Capturar](https://github.com/user-attachments/assets/bcf825b0-e1a3-43f4-ad67-bc906e0afb78)
+Aqui vai uma imagem da aplicação final ![Capturar](https://github.com/user-attachments/assets/bcf825b0-e1a3-43f4-ad67-bc906e0afb78)
 
 ---
+🔗 Links da Aplicação Online
+Frontend (Aplicação ao Vivo): [https://seu-projeto.vercel.app](https://cotabox-challenge-taupe.vercel.app)
+
+Backend (API GraphQL Playground): https://cotabox-challenge-backend.onrender.com/graphql
 
 ## ✨ Funcionalidades
 
