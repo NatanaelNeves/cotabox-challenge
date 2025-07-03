@@ -4,8 +4,7 @@ Este projeto é uma aplicação Fullstack completa desenvolvida como parte do de
 
 ## 📸 Screenshot
 
-![Aqui vai uma imagem da aplicação final](https://i.imgur.com/vHqT85A.jpg) 
-*(Dica: Substitua o link acima por uma imagem do seu projeto. Você pode arrastar a imagem para a área de edição do GitHub para gerar um link)*
+![Aqui vai uma imagem da aplicação final] ![Capturar](https://github.com/user-attachments/assets/bcf825b0-e1a3-43f4-ad67-bc906e0afb78)
 
 ---
 
