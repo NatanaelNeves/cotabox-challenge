@@ -1,0 +1,25 @@
+    version: '3.8' # Especifica a versão do Docker Compose
+
+    services:
+      # Serviço do Backend
+      backend:
+        build: ./backend  # Onde encontrar o Dockerfile para construir a imagem
+        ports:
+          - "4000:4000"  # Mapeia a porta 4000 do seu PC para a porta 4000 do container
+        volumes:
+          - ./backend:/app # Espelha a pasta local 'backend' para a pasta '/app' do container
+          - /app/node_modules # Impede que a 'node_modules' local sobrescreva a do container
+        env_file:
+          - ./backend/.env # Carrega as variáveis de ambiente do arquivo .env
+
+      # Serviço do Frontend
+      frontend:
+        build: ./frontend # Onde encontrar o Dockerfile para construir a imagem
+        ports:
+          - "8080:8080"  # Mapeia a porta 8080 do seu PC para a porta 8080 do container
+        volumes:
+          - ./frontend:/app
+          - /app/node_modules
+        depends_on:
+          - backend      # Garante que o backend inicie antes do frontend
+    
