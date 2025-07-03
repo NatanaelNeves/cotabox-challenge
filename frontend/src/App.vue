@@ -2,7 +2,11 @@
   <div id="app">
     <div class="page-background">
       <transition name="slide-fade" appear>
-        <TheHeaderForm @add-participant="handleAddParticipant" :is-loading="isLoading" />
+        <TheHeaderForm
+          @add-participant="handleAddParticipant"
+          :is-loading="isLoading"
+          :remaining="remainingPercentage"
+        />
       </transition>
     </div>
 
@@ -39,13 +43,12 @@
     </main>
 
     <footer class="app-footer">
-      Feito com 💙 por [Seu Nome] — Desafio Cotabox
+      Feito por Natanael Neves — Desafio Cotabox
     </footer>
   </div>
 </template>
 
 <script>
-// A seção <script> continua a mesma
 import TheHeaderForm from './components/TheHeaderForm.vue';
 import ParticipantTable from './components/ParticipantTable.vue';
 import ParticipationChart from './components/ParticipationChart.vue';
@@ -109,6 +112,11 @@ export default {
           },
         ],
       };
+    },
+    // Propriedade computada para calcular a porcentagem restante
+    remainingPercentage() {
+      const total = this.participants.reduce((sum, p) => sum + p.participation, 0);
+      return 100 - total;
     }
   },
   methods: {
@@ -171,7 +179,7 @@ export default {
 </script>
 
 <style>
-/* Estilos Globais e da Aplicação */
+/* A seção <style> continua exatamente a mesma de antes */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -193,7 +201,6 @@ body {
 .main-container {
   flex: 1;
   width: 100%;
-  /* A mudança está aqui */
   max-width: 1100px;
   margin: -80px auto 40px auto;
   padding: 0 20px;
@@ -223,7 +230,6 @@ body {
 
 .data-display-grid {
   display: grid;
-  /* E a mudança está aqui, para dar 50% de espaço para cada */
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
@@ -236,7 +242,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* Animações */
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s ease;
 }
@@ -252,7 +257,6 @@ body {
   opacity: 0;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
   .data-display-grid {
     grid-template-columns: 1fr;
