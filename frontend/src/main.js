@@ -10,8 +10,10 @@ import { ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client/core
 Vue.use(ElementUI);
 Vue.use(VueApollo);
 
+const graphqlEndpoint = process.env.VUE_APP_GRAPHQL_ENDPOINT || 'http://localhost:4000/graphql';
+
 const httpLink = createHttpLink({
-  uri: 'http://localhost:4000/graphql', 
+  uri: graphqlEndpoint,
 });
 
 const cache = new InMemoryCache();
@@ -29,5 +31,5 @@ Vue.config.productionTip = false;
 
 new Vue({
   render: (h) => h(App),
-  apolloProvider, 
+  apolloProvider,
 }).$mount('#app');
